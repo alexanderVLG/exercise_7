@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание №7</title>
+  <style>
+    :root {
+      box-sizing: border-box;
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      color: #000;
+      line-height: 1.5;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+    }
+
+    form {
+      margin: 0.5em;
+      padding: 2.5em;
+      background-color: #b2b2b2;
+      border: 1px solid black;
+      border-radius: .7em;
+    }
+
+    .container {
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .creation__zone {
+      margin-left: 2em;
+      margin-top: 3em;
+    }
+
+    .main__section {
+      margin-left: 2em;
+      margin-top: 3em;
+    }
+
+    .primary__input {
+      margin-bottom: 2em;
+    }
+
+    .add__button {
+      margin-left: 1.25em;
+      padding: 6px 15px;
+      font-size: 2rem;
+    }
+
+    .close__button {
+      position: absolute;
+      right: -2.2em;
+      display: inline-block;
+      padding-top: 0.1em;
+      width: 2em;
+      height: 2em;
+      text-align: center;
+      vertical-align: middle;
+      background-color: #eee;
+    }
+
+    .close__button:hover {
+      cursor: pointer;
+    }
+
+    .textarea--inner {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <section class="main__section">
+      <form action="">
+        <ul class="form__list">
+          <li>
+            <label>Длина:</label>
+          </li>
+          <li>
+            <input id="get_length" class="primary__input" type="text" placeholder="">
+          </li>
+          <li>
+            <label>Высота:</label>
+          </li>
+          <li>
+            <input id="get_height" class="primary__input" type="text" placeholder="">
+          </li>
+          <li>
+            <label>Цвет:</label>
+          </li>
+          <li>
+            <input id="get_color" class="primary__input" type="text" placeholder="">
+          </li>
+          <li>
+            <textarea name="" cols="30" rows="10"></textarea>
+          </li>
+        </ul>
+      </form>
+      <button class="add__button">+</button>
+      <br>
+      <br>
+      <button id="create__btn">Создать</button>
+    </section>
+    <section class="creation__zone"></section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
